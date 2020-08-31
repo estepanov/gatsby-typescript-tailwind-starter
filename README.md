@@ -1,5 +1,7 @@
 # Gatsby Tailwind Emotion TypeScript Starterkit
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ae878768-da87-4050-8890-bcaeffe84831/deploy-status)](https://app.netlify.com/sites/gatsby-typescript-tailwind-starter-kit/deploys)
+
 - [x] TypeScript
 - [x] Aliased imports `~/components` -> `./src/components`
 - [x] Build components utilizing [Tailwind CSS](https://tailwindcss.com/) class names via [`twin.macro`](https://github.com/ben-rogerson/twin.macro) and powered by [emotion CSS-in-JS](https://github.com/emotion-js/emotion).
