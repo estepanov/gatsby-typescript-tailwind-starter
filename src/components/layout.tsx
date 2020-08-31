@@ -6,38 +6,53 @@
  */
 
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+// import { useStaticQuery, graphql } from "gatsby";
+// import { SiteTitleQuery } from "../../gatsby-graphql";
+import { Global, css } from "@emotion/core";
 
-import Header from "./header";
+import Header from "~/components/Header";
+import tw from "twin.macro";
+import Footer from "~/components/Footer";
 
-const Layout: React.FC = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+interface LayoutProps {
+  container?: boolean;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children, container }) => {
+  // const data: SiteTitleQuery = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `);
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+      <Global
+        styles={css`
+          body {
+            ${tw`bg-blue-100`}
+            ${tw`h-screen`}
+          }
+          body > div,
+          body > div > div {
+            ${tw`flex flex-grow flex-col`}
+            ${tw`h-full`}
+          }
+        `}
+      />
+      <Header />
+      <div css={tw`flex flex-col flex-grow`}>
+        {container ? <div css={tw`container py-3`}>{children}</div> : children}
       </div>
+      <Footer>
+        © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+      </Footer>
     </>
   );
 };
