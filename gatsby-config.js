@@ -10,9 +10,10 @@ module.exports = {
       resolve: "gatsby-alias-imports",
       options: {
         aliases: {
-          "~": "./src",
+          "~": "./src/",
           "~~": "./",
         },
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
     },
     "gatsby-plugin-emotion",
