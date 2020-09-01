@@ -7,7 +7,7 @@ interface LogoLinkProps {
 }
 
 const StyledLink = styled(Link)`
-  ${tw`text-white font-sans text-lg font-bold`}
+  ${tw`text-white font-sans text-2xl font-bold`}
 `;
 
 const LogoLink: React.FC<LogoLinkProps> = ({ children, to }) => {

@@ -51,7 +51,8 @@ const Layout: React.FC<LayoutProps> = ({ children, container }) => {
       <Footer>
         © {new Date().getFullYear()}, Built with
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://www.gatsbyjs.org">Gatsby</a>, Built by {` `}{" "}
+        <a href="https://www.estep.nyc">estep</a>
       </Footer>
     </>
   );

@@ -5,6 +5,22 @@ module.exports = {
   important: false,
   separator: ":",
   theme: {
+    linearGradientColors: {
+      purple: ["#b794f4", "#805ad5"],
+      "purple-dark": ["#6b46c1", "#44337a"],
+      "light-gray": ["#f7fafc", "#cbd5e0"],
+      "dark-gray": ["#4a5568", "#1a202c"],
+    },
+    linearGradientDirections: {
+      t: "to top",
+      tr: "to top right",
+      r: "to right",
+      br: "to bottom right",
+      b: "to bottom",
+      bl: "to bottom left",
+      l: "to left",
+      tl: "to top left",
+    },
     screens: {
       sm: "640px",
       md: "768px",
@@ -218,7 +234,7 @@ module.exports = {
         "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
       "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
       inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
-      outline: "0 0 0 3px rgba(66, 153, 225, 0.5)",
+      outline: "0 0 0 5px rgb(128, 90, 213, 0.5)",
       none: "none",
     },
     container: {
@@ -738,6 +754,12 @@ module.exports = {
     lineHeight: ["responsive"],
     listStylePosition: ["responsive"],
     listStyleType: ["responsive"],
+    linearGradients: ["responsive", "hover", "focus"],
+    radialGradients: ["responsive"],
+    conicGradients: ["responsive"],
+    repeatingLinearGradients: ["responsive"],
+    repeatingRadialGradients: ["responsive"],
+    repeatingConicGradients: ["responsive"],
     margin: ["responsive"],
     maxHeight: ["responsive"],
     maxWidth: ["responsive"],
@@ -787,6 +809,7 @@ module.exports = {
     scale: ["responsive", "hover", "focus"],
     rotate: ["responsive", "hover", "focus"],
     translate: ["responsive", "hover", "focus"],
+    shadowOutline: ["hover", "focus"],
     skew: ["responsive", "hover", "focus"],
     transitionProperty: ["responsive"],
     transitionTimingFunction: ["responsive"],
@@ -795,5 +818,9 @@ module.exports = {
     animation: ["responsive"],
   },
   corePlugins: {},
-  plugins: [require("@tailwindcss/ui"), require("@tailwindcss/custom-forms")],
+  plugins: [
+    require("@tailwindcss/ui"),
+    require("@tailwindcss/custom-forms"),
+    require("tailwindcss-gradients"),
+  ],
 };

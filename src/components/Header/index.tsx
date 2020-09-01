@@ -30,7 +30,7 @@ const MainNav = [
     to: "/page-2",
   },
 ];
-const logo = <LogoLink to="/">Gatsby Tailwind TypeScript</LogoLink>;
+const logo = <LogoLink to="/">Best Starter Kit</LogoLink>;
 
 const Header: React.FC = () => {
   // const [isOpen, setIsOpen] = useState(false);
