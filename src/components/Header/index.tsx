@@ -19,18 +19,27 @@ const MobileLink = styled.nav<MobileLinkProps>`
 `;
 
 const MainNav = [
-  {
-    children: "Home",
-    key: "Landing",
-    to: "/",
-  },
+  // {
+  //   children: "Home",
+  //   key: "Landing",
+  //   to: "/",
+  // },
   {
     children: "Page Two",
     key: "Page Two",
     to: "/page-2",
   },
+  {
+    children: "404 Page",
+    key: "404",
+    to: "/404",
+  },
 ];
-const logo = <LogoLink to="/">Best Starter Kit</LogoLink>;
+const logo = (
+  <LogoLink to="/">
+    The Best <span tw="text-purple-800">Starter Kit</span>
+  </LogoLink>
+);
 
 const Header: React.FC = () => {
   // const [isOpen, setIsOpen] = useState(false);

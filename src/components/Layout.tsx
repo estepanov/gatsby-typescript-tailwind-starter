@@ -39,20 +39,25 @@ const Layout: React.FC<LayoutProps> = ({ children, container }) => {
           }
           body > div,
           body > div > div {
-            ${tw`flex flex-grow flex-col`}
+            ${tw`flex flex-grow flex-col flex-shrink-0`}
             ${tw`h-full`}
           }
         `}
       />
       <Header />
-      <div css={tw`flex flex-col flex-grow`}>
+      <div css={tw`flex flex-col flex-grow flex-shrink-0`}>
         {container ? <div css={tw`container py-3`}>{children}</div> : children}
       </div>
       <Footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>, Built by {` `}{" "}
-        <a href="https://www.estep.nyc">estep</a>
+        <div tw="text-center">
+          © {new Date().getFullYear()}
+          <br />
+          Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <br />
+          Starter kit by <a href="https://www.estep.nyc">estepanov</a>
+        </div>
       </Footer>
     </>
   );

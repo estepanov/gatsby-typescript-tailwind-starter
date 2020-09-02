@@ -4,10 +4,9 @@ import "twin.macro";
 const Footer: React.FC = ({ children }) => {
   return (
     <footer>
-      {children && <div tw="container pt-10 pb-6">{children}</div>}
       <div tw="container pt-10 pb-6">
-        <div tw="flex flex-wrap">
-          <div tw="w-full md:w-1/4 text-center md:text-left">
+        <div tw="flex flex-wrap flex-shrink-0">
+          <div tw="w-full md:w-1/4 text-left">
             <h5 tw="uppercase mb-6 font-bold">Links</h5>
             <ul tw="mb-4">
               <li tw="mt-2">
@@ -36,7 +35,7 @@ const Footer: React.FC = ({ children }) => {
               </li>
             </ul>
           </div>
-          <div tw="w-full md:w-1/4 text-center md:text-left">
+          <div tw="w-full md:w-1/4 text-left">
             <h5 tw="uppercase mb-6 font-bold">Legal</h5>
             <ul tw="mb-4">
               <li tw="mt-2">
@@ -57,7 +56,7 @@ const Footer: React.FC = ({ children }) => {
               </li>
             </ul>
           </div>
-          <div tw="w-full md:w-1/4 text-center md:text-left">
+          <div tw="w-full md:w-1/4 text-left">
             <h5 tw="uppercase mb-6 font-bold">Social</h5>
             <ul tw="mb-4">
               <li tw="mt-2">
@@ -86,7 +85,7 @@ const Footer: React.FC = ({ children }) => {
               </li>
             </ul>
           </div>
-          <div tw="w-full md:w-1/4 text-center md:text-left">
+          <div tw="w-full md:w-1/4 text-left">
             <h5 tw="uppercase mb-6 font-bold">Company</h5>
             <ul tw="mb-4">
               <li tw="mt-2">
@@ -117,6 +116,7 @@ const Footer: React.FC = ({ children }) => {
           </div>
         </div>
       </div>
+      {children && <div tw="container pt-10 pb-6">{children}</div>}
     </footer>
   );
 };

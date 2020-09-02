@@ -27,13 +27,27 @@ const Features: React.FC = () => {
             </p>
 
             <ul tw="mt-10">
-              <li>
+              <li tw="not-last-of-type:mb-5">
                 <div tw="flex">
                   <div>
                     <h5 tw="text-lg leading-6 font-medium text-purple-900">
                       Loaded with Gatsby features
                     </h5>
-                    <p tw="mt-2 text-base leading-6 text-purple-600">
+                    <p tw="mt-2 text-base leading-6 text-purple-500">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Maiores impedit perferendis suscipit eaque, iste dolor
+                      cupiditate blanditiis ratione.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li tw="not-last-of-type:mb-5">
+                <div tw="flex">
+                  <div>
+                    <h5 tw="text-lg leading-6 font-medium text-purple-900">
+                      Loaded with Gatsby features
+                    </h5>
+                    <p tw="mt-2 text-base leading-6 text-purple-500">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Maiores impedit perferendis suscipit eaque, iste dolor
                       cupiditate blanditiis ratione.
@@ -53,73 +67,30 @@ const Features: React.FC = () => {
           <div tw="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div tw="lg:col-start-2">
               <h4 tw="text-2xl leading-8 font-extrabold text-purple-900 tracking-tight sm:text-3xl sm:leading-9">
-                Always in the loop
+                More Stuff
               </h4>
-              <p tw="mt-3 text-lg leading-7 text-purple-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                ex obcaecati natus eligendi delectus, cum deleniti sunt in
-                labore nihil quod quibusdam expedita nemo.
-              </p>
-
+              <p tw="mt-3 text-lg leading-7 text-purple-500">Doing it</p>
               <ul tw="mt-10">
-                <li>
+                <li tw="not-last-of-type:mb-5">
                   <div tw="flex">
-                    <div tw="flex-shrink-0">
-                      <div tw="flex items-center justify-center h-12 w-12 rounded-md bg-white text-purple-500">
-                        <svg
-                          tw="h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div tw="ml-4">
+                    <div>
                       <h5 tw="text-lg leading-6 font-medium text-purple-900">
-                        Mobile notifications
+                        Point One
                       </h5>
-                      <p tw="mt-2 text-base leading-6 text-purple-600">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Maiores impedit perferendis suscipit eaque, iste
-                        dolor cupiditate blanditiis ratione.
+                      <p tw="mt-2 text-base leading-6 text-purple-500">
+                        Some text
                       </p>
                     </div>
                   </div>
                 </li>
-                <li>
+                <li tw="not-last-of-type:mb-5">
                   <div tw="flex">
-                    <div tw="flex-shrink-0">
-                      <div tw="flex items-center justify-center h-12 w-12 rounded-md bg-white text-purple-500">
-                        <svg
-                          tw="h-6 w-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div tw="ml-4">
+                    <div>
                       <h5 tw="text-lg leading-6 font-medium text-purple-900">
-                        Reminder emails
+                        point two
                       </h5>
-                      <p tw="mt-2 text-base leading-6 text-purple-600">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Maiores impedit perferendis suscipit eaque, iste
-                        dolor cupiditate blanditiis ratione.
+                      <p tw="mt-2 text-base leading-6 text-purple-500">
+                        some text
                       </p>
                     </div>
                   </div>
